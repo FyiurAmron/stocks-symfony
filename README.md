@@ -24,7 +24,7 @@ Base endpoint path is
 
 <http://symfony.localhost:8080/prices>
 
-There are four options accepted (passed as query string parts), all are optional:
+There are four parameters accepted (passed as query string parts), all of them optional:
 
  - startDate (`YYYY-mm-dd`) - the date of first requested currency price (inclusive); yesterday if omitted
  - endDate (`YYYY-mm-dd`) - the date of last requested currency price (inclusive); today if omitted
