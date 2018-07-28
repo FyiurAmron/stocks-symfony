@@ -14,7 +14,7 @@ Clone this repository and use the provided Docker container to set up a local
  
  in the project root. Updating the composer dependencies can be done either
  locally (with `composer install -d symfony` from project root)
- or via the docker container, using
+ or, preferably, via the supplied Docker container, using
  
  `docker-compose exec php composer update`
 
