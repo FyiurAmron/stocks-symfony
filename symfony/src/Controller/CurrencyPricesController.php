@@ -43,6 +43,8 @@ class CurrencyPricesController extends Controller
         $targetCurrenciesArr = \explode(',', $targetCurrenciesStr);
 
         $responseContent = null;
+        $status = null;
+
         try {
             $responseContent = [
                 'result' => $currencyPricesProvider->fetchPrices(
@@ -51,14 +53,16 @@ class CurrencyPricesController extends Controller
                 'success' => true,
                 'problem' => null,
             ];
+            $status = 200;
         } catch (GuzzleException $ex) {
             $responseContent = [
                 'result' => null,
                 'success' => false,
                 'problem' => $ex->getMessage(),
             ];
+            $status = 400;
         }
 
-        return new JsonResponse($responseContent);
+        return new JsonResponse($responseContent,$status);
     }
 }
