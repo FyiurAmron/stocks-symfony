@@ -7,10 +7,16 @@ implementing response caching (in memory or database) later on.
 ##### INSTALLATION
 
 Clone this repository and use the provided Docker container to set up a local
- nginx server listening on
- <http://symfony.localhost:8080> .
+ nginx server listening on vhost `symfony.localhost` and port `8080`, i.e.
+ <http://symfony.localhost:8080> , by executing
  
  `docker-compose up`
+ 
+ in the project root.
+
+The core of the application (Symfony app) resides in `/symfony` directory,
+and can be run without any Docker environment, by setting local PHP/nginx instances with config files
+supplied in `/php-fpm` and `/nginx` directories.
 
 ##### USAGE
 
