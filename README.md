@@ -45,9 +45,8 @@ All pairs that can be created of given currencies are provided, e.g.
 ##### TESTING
 
 This app uses the official `symfony/test-pack`, providing `symfony/phpunit-bridge`, which in turn provide a complete PHPUnit
-test environment, which can be used either in a Docker context, or as a standalone application. E.g.,
-for a standalone execution, simply run
+test environment, which can be used either in a Docker context, e.g.
 
-`symfony/bin/phpunit`
+`docker-compose exec php bin/phpunit --testdox`
 
-... from the project root to execute the provided example functional test case.
+, or as a standalone application (`symfony/bin/phpunit` from the project root) to execute the provided example functional test case.
