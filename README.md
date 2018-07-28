@@ -46,4 +46,4 @@ for a standalone execution, simply run
 
 `symfony/bin/phpunit`
 
-... to execute the provided example functional test.
+... from the project root to execute the provided example functional test case.
